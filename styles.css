@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(184, 230, 253);
+    background-color: rgb(220, 230, 255);
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.125rem;
     font-weight: 300;
@@ -63,6 +63,10 @@ h1 {
     text-decoration: underline;
 }
 
+.article-info {
+    margin: 2em 0;
+}
+
 /* ==========
 Layout
 ========== */
@@ -76,20 +80,30 @@ Layout
 .container-flex {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 header {
     background-color: rgb(245, 245, 250);
-    padding: 2em 0;
+    padding: 1em 0;
+    text-align: center;
 }
 
-@media (max-width: 675px) {
-    .container-nav {
-        flex-direction: column;
+@media (min-width: 675px) {
+    .container-flex {
+        flex-direction: row;
     }
 
     header {
-        text-align: center;
+        padding: 2em 0;
+    }
+
+    .main-container {
+        width: 70%;
+    }
+
+    aside {
+        width: 25%;
     }
 }
 
@@ -158,4 +172,12 @@ nav a:focus {
     nav li {
         margin: 0.5em 0;
     }
+}
+
+/* articles */
+
+.article-top {
+    border-bottom: 0.1rem solid rgb(110, 110, 110);
+    padding-bottom: 2em;
+
 }

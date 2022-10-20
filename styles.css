@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(184, 230, 253);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+/*img are display: inline by default*/
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==========
+Typography
+========== */
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(20, 55, 115);
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+    font-size: 0.875rem;
+}
+
+.article-read-more {
+    color: rgb(23, 146, 210);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+    color: rgb(20, 55, 115);
+    color: rgb;
+    text-decoration: underline;
+}
+
+/* ==========
+Layout
+========== */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: rgb(245, 245, 250);
+    padding: 2em 0;
+}
+
+@media (max-width: 675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    background: rgb(50, 50, 100);
+    color: rgb(160, 160, 160);
+    font-size: 0.8rem;
+    padding: 1.5em 0;
+}
+
+.footer-title {
+    color: rgb(200, 200, 200);
+    margin-bottom: 0.1rem;
+}
+
+/* ==========
+Navigation
+========== */
+
+nav {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(60, 60, 80);
+    font-weight: 700;
+    padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: rgb(23, 146, 210);
+    border-bottom: 0.15rem solid rgb(60, 60, 80);
+}
+
+/* .current-page {} */
+
+.current-page:hover {
+    color: rgb(60, 60, 80);
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    nav li {
+        margin: 0.5em 0;
+    }
+}

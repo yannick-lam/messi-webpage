@@ -98,6 +98,7 @@ h1 {
 
 .article-body {
     letter-spacing: 0.5px;
+    text-align: justify;
 }
 
 /* ==========

@@ -9,6 +9,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.125rem;
     font-weight: 300;
+    line-height: 1.6;
 }
 
 /*img are display: inline by default*/
@@ -23,7 +24,6 @@ img {
     object-fit: cover;
     margin-bottom: 2em;
 }
-
 
 .arg-image {
     display: inline-block;
@@ -62,12 +62,14 @@ h1 {
 .subtitle {
     font-size: 0.75rem;
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: rgb(23, 146, 210);
     margin: 0;
+    text-transform: uppercase;
 }
 
 .article-title {
     font-size: 1.3rem;
+    letter-spacing: 0.8px;
     padding-bottom: 1em;
 }
 
@@ -94,17 +96,8 @@ h1 {
     margin: 1.5em 0;
 }
 
-.widget-post-title {
-    font-size: 0.9em;
-    margin-bottom: 0.5em;
-}
-
-.widget-title {
-    font-size: 0.9em;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    color: rgb(20, 55, 115);
-    margin-bottom: 1em;
+.article-body {
+    letter-spacing: 0.5px;
 }
 
 /* ==========
@@ -138,7 +131,7 @@ header {
     header {
         padding: 2em 0;
     }
-
+    
     .site-title {
         text-align: left;
     }
@@ -195,6 +188,7 @@ nav li {
 nav a {
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 1px;
     color: rgb(60, 60, 80);
     font-weight: 700;
     padding: 0.25em 0;
@@ -281,7 +275,7 @@ nav a:focus {
         height: 200px;
         object-fit: cover;
     }
-
+    
     .image-big {
         width: 100%;
         height: 330px;
@@ -299,15 +293,24 @@ nav a:focus {
     margin-bottom: 2em;
 }
 
-.widget-title {
-    font-size: 1.25rem;
-    padding: 0;
-}
-
 .widget-post {
     border-bottom: 0.1rem solid rgb(110, 110, 110);
     padding-bottom: 1em;
     margin-bottom: 1.3em;
+}
+
+.widget-post-title {
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+.widget-title {
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: rgb(20, 55, 115);
+    padding: 0;
+    margin-bottom: 1em;
 }
 
 .widget-body {
@@ -337,7 +340,11 @@ nav a:focus {
     margin-bottom: 0.3em;
 }
 
-
+@media (min-width: 675px) {
+    .widget-title {
+        font-size: 1rem;
+    }   
+}
 
 
 

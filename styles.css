@@ -67,7 +67,7 @@ h1 {
 }
 
 .article-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-bottom: 1em;
 }
 
@@ -246,6 +246,10 @@ nav a:focus {
 }
 
 @media (min-width: 675px) {
+    .article-title {
+        font-size: 1.5rem;
+    }
+    
     .article-content {
         flex-direction: row;
         justify-content: space-between;
